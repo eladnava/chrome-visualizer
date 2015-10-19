@@ -1,0 +1,44 @@
+﻿<Window x:Class="ChromeVisualizer.Browser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        Title="Chrome Visualizer"
+        Icon="App.ico"
+        PreviewKeyDown="WindowPreviewKeyDown"
+        WindowState="Maximized" Height="700" Width="1200">
+    <Window.Resources>
+        <Storyboard x:Key="FadeOutLoading">
+            <DoubleAnimation From="1" To="0" Storyboard.TargetName ="Loading" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="0:0:0.2"/>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+        <cefSharp:ChromiumWebBrowser x:Name="WebBrowser" Grid.Row="0"
+                          WebBrowser="{Binding WebBrowser, Mode=OneWayToSource}"
+                          Title="{Binding Title, Mode=TwoWay}" />
+        <Image HorizontalAlignment="Center" Opacity="0.9" x:Name="Loading" Height="150" VerticalAlignment="Center" Width="150" Source="App.ico">
+            <Image.RenderTransform>
+                <RotateTransform CenterX="75" CenterY="75" />
+            </Image.RenderTransform>
+            <Image.Style>
+                <Style>
+                    <Style.Triggers>
+                        <Trigger Property="Image.IsEnabled" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                    Storyboard.TargetProperty="RenderTransform.Angle"
+                                    From="0"
+                                    To="360"
+                                    Duration="0:0:0.75"
+                                    RepeatBehavior="Forever" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+    </Grid>
+</Window>

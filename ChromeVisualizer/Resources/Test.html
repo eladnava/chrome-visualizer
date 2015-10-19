@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<html class="google mmfb" dir="ltr" lang="en">
+  <head>
+
+    <script>
+      (function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
+    </script>
+    <meta charset="utf-8">
+      <meta content=
+    "Get the data you need to make intelligent marketing and business decisions with Google Analytics. Available for websites, apps, and enterprise businesses."
+      name="description">
+        <title>
+          Google Analytics - Mobile, Premium and Free Website Analytics – Google
+        </title>
+        <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+          <script>
+            (function() {
+            function d(a,c,b){return a.call.apply(a.bind,arguments)}function e(a,c,b){if(!a)throw Error();if(2<arguments.length){var k="Array.prototype.slice.call(arguments,2);return" function(){var="" b="Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,k);return" a.apply(c,b)}}return="" function(){return="" a.apply(c,arguments)}}function="" f(a,c,b){f="Function.prototype.bind"&&-1!=Function.prototype.bind.toString().indexOf("native code")?d:e;return f.apply(null,arguments)}
+            Function.prototype.bind=Function.prototype.bind||function(a,c){if(1<arguments.length){var b="Array.prototype.slice.call(arguments,1);b.unshift(this,a);return" f.apply(null,b)}return="" f(this,a)};var="" g=""document.documentElement,h=""document.documentElement;window.aimSvgSupport=!!"document.createElementNS"&&!!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect;for(var l="flexWrap WebkitFlexWrap MozFlexWrap OFlexWrap msFlexWrap boxDirection WebkitBoxDirection MozBoxDirection OBoxDirection msBoxDirection".split(" ");0<l.length&&void 0==h.style[l.shift()];);window.aimFlexSupport=0<l.length;g.className+=window.aimSvgSupport=""?" aim-svg":=""
+g.className+=window.aimFlexSupport?" aim-flex":=""" aim-noflex";
+})();
+          </script>
+          <script src="//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js">
+          </script>
+          <script src="//www.google.com/js/google.js">
+          </script>
+          <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;lang=en" rel=
+    "stylesheet">
+            <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&amp;lang=en" rel=
+    "stylesheet">
+              <link href="//fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
+                <link href="../analytics/css/funnel.min.css" rel="stylesheet">
+                  <link href="/analytics/images/shared/favicon.ico" rel="shortcut icon" type="image/x-icon">
+                    <style>
+                      iframe.c2 {display:none;visibility:hidden}
+                      svg.c1 {enable-background:new 0 0 23 15;}
+                    </style>
+                  </head>
+  <body data-ng-app="rs.analytics">
+    <header class="header" role="banner">
+      <h1 class="product-logo">
+        <a data-g-action="Analytics" data-g-event="Home" data-g-label="Global Nav Logo" href=
+        "../analytics/">
+          <img alt="Google" src=
+        "//www.google.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png" srcset=
+        "//www.google.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png 2x">
+            <span class="site-name">Analytics</span>
+        </a>
+      </h1>
+      <nav class="main-navigation no-cta" data-ng-controller="rs.navigation.NavCtrl as navCtrl">
+        <h1>
+          Analytics
+        </h1>
+        <ul>
+          <li>
+            <a data-g-action="Global Nav" data-g-event="Home" data-g-label="Analytics Premium"
+            href="../analytics/premium/">Analytics Premium</a>
+          </li>
+          <li>
+            <a data-g-action="Global Nav" data-g-event="Home" data-g-label="Adometry" href=
+            "../analytics/adometry/">Adometry</a>
+          </li>
+          <li>
+            <a data-g-action="Global Nav" data-g-event="Home" data-g-label="Analytics" href=
+            "../analytics/standard/">Analytics</a>
+          </li>
+          <li>
+            <a data-g-action="Global Nav" data-g-event="Home" data-g-label=
+            "Analytics For Mobile Apps" href="../analytics/mobile/">Analytics for Mobile Apps</a>
+          </li>
+          <li>
+            <a data-g-action="Global Nav" data-g-event="Home" data-g-label="Tag Manager" href=
+            "../analytics/tag-manager/">Tag Manager</a>
+          </li>
+        </ul>
+        <div class="nav-dropdown-wrapper" data-rs-popupmenu="" ng-cloak="">
+          <a class="nav-dropdown-trigger" data-g-action="Sign In Menu" data-g-event="Home"
+          data-g-label="Global Nav CTA" ng-click="dropdownExpanded = !dropdownExpanded">
+            Sign in
+            <svg class="icon-arrow-down" enable-background="new 0 0 32 32" height="12px" version=
+          "1.1" viewbox="0 0 32 32" width="12px" x="0px" xml:space="preserve" xmlns=
+          "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+          <polygon points="28.2,6.1 16,18.3 3.8,6.1 0,9.9 16,25.9 32,9.9"></polygon></svg>
+            <img alt="" class="icon-arrow-down" height="12" src=
+          "//www.google.com/ads/images/icons/icon-arrow-down.png" width="12">
+          </a>
+          <div class="nav-dropdown" ng-class="{'nav-dropdown-expanded': dropdownExpanded}">
+            <a class="nav-dropdown-close" ng-click="dropdownExpanded = false">
+              <svg class=
+            "icon-arrow-down" enable-background="new 0 0 32 32" height="12px" version="1.1"
+            viewbox="0 0 32 32" width="12px" x="0px" xml:space="preserve" xmlns=
+            "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+            <polygon points="28.2,6.1 16,18.3 3.8,6.1 0,9.9 16,25.9 32,9.9"></polygon></svg>
+              <img alt="" class="icon-arrow-down" height="12" src=
+            "//www.google.com/ads/images/icons/icon-arrow-down.png" width="12">
+            </a>
+            <ul>
+              <li>
+                <a data-g-action="GA Sign In" data-g-event="Home" data-g-label="Global Nav CTA"
+                href="https://www.google.com/analytics/web/?hl=en">Google Analytics</a>
+              </li>
+              <li>
+                <a data-g-action="GA Premium Sign In" data-g-event="Home" data-g-label=
+                "Global Nav CTA" href="https://www.google.com/analytics/web/?hl=en">
+                  Google
+                  Analytics Premium
+                </a>
+              </li>
+              <li>
+                <a data-g-action="GTM Sign In" data-g-event="Home" data-g-label="Global Nav CTA"
+                href="http://tagmanager.google.com/?hl=en">Google Tag Manager</a>
+              </li>
+              <li>
+                <a data-g-action="Adometry Sign In" data-g-event="Home" data-g-label=
+                "Global Nav CTA" href="http://attribute.adometry.com/?hl=en">Adometry by Google</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button class="nav-toggle-button">
+        <span class="icon-menu-els">
+          <span class=
+      "menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class=
+      "menu-bar"></span>
+        </span>
+      </button>
+    </header>
+    <div class="main" role="main">
+      <section class="section section-hero">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="section-hero-copy col-5 col-offset-7">
+              <h1>
+                Turn insights into action.
+              </h1>
+              <p class="font-large">
+                Improve performance across your sites, apps, and offline marketing. Google’s
+                analytics solutions can help you turn customer insights into action for your
+                business.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-hero-media">
+          <div class="hero-image hero-img"></div>
+        </div>
+        <a class="fab fab-bottom-center google-blue gweb-smoothscroll-control" data-g-action=
+        "Scroll Button" data-g-event="Home" data-g-label="Canvas" href="#section-quote">
+          <svg class=
+        "icon-fab-scroll" enable-background="new 0 0 32 32" height="14px" version="1.1" viewbox=
+        "0 0 32 32" width="14px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+        <polygon points="28.2,6.1 16,18.3 3.8,6.1 0,9.9 16,25.9 32,9.9"></polygon></svg>
+          <img alt=
+        "" class="icon-fab-scroll" height="14" src=
+        "//www.google.com/ads/images/icons/icon-fab-scroll.png" width="14">
+        </a>
+      </section>
+      <section class="section section-dark section-quote google-blue" id="section-quote">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="col-12">
+              <blockquote class="hanging">
+                “Google Analytics Premium helped us improve engagement by 33<sup>%</sup> and
+                click-throughs by 21<sup>%</sup> for content promotions on our homepage.”
+              </blockquote>
+              <cite class="font-medium">
+                <strong>Mia Vallo</strong> - Sr. Director,
+                Marketing Analytics, National Geographic
+              </cite>
+              <p class="vertical-offset">
+                <a class="link-more" data-g-action="Learn More About Premium" data-g-event="Home"
+                data-g-label="National Geographic" href="premium/">
+                  Learn more about premium
+                  <svg class="icon-arrow-more" enable-background="new 0 0 32 32" height="14px"
+                  version="1.1" viewbox="0 0 32 32" width="14px" x="0px" xml:space="preserve" xmlns=
+                "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16c8.8,0,16-7.2,16-16S24.8,0,16,0 M16,25.7L14.3,24l6.8-6.8H7v-2.4h14.1L14.3,8L16,6.3 l9.7,9.7L16,25.7z">
+                </path></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-enterprise">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="col-6">
+              <div class="cols-row">
+                <div class="col-12" data-rs-trigger="enterpriseAnimation">
+                  <h4 class="section-sub-heading border-yellow">
+                    For Enterprise
+                  </h4>
+                  <h2>
+                    Marketing solutions for large businesses.
+                  </h2>
+                  <p class="font-large">
+                    Arm your team with the marketing data and insights they need to make informed
+                    decisions.
+                  </p>
+                  <p>
+                    <a class="button cta-main" data-g-action="Contact Us" data-g-event="Home"
+                    data-g-label="For Enterprise" href="../analytics/premium/contact-us/">
+                      Contact
+                      Us
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="hidden-s section-image-s">
+                <picture>
+                  <source media="(min-width: 768px)" srcset=
+                "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                    <img alt="" class="" srcset=
+                "../analytics/images/funnel/enterprise_m_1x.png, ../analytics/images/funnel/enterprise_m_2x.png 2x">
+                    </picture>
+              </div>
+              <div class="cols-row cards">
+                <div class="col-4 col-m-3 card card-related col-6 col-m-6 card-light-gray">
+                  <a class="card-inner" data-g-action="Analytics Premium" data-g-event="Home"
+                  data-g-label="For Enterprise" href="../analytics/premium/">
+                    <img alt="" class=
+                  "product-logo" src=
+                  "//www.google.com/images/icons/material/product/1x/analytics_64dp.png">
+                      <h3>
+                        Analytics Premium
+                      </h3>
+                      <p class="last">
+                        Take action on data that’s accurate, integrated, and fully supported by Google.
+                      </p>
+                      <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height=
+                  "16px" version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space=
+                  "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                  "http://www.w3.org/1999/xlink" y="0px">
+                  <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+                  </polygon></svg>
+                      <img alt="" class="icon-arrow-related" height="16" src=
+                  "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                  </a>
+                </div>
+                <div class="col-4 col-m-3 card card-related col-6 col-m-6 card-light-gray">
+                  <a class="card-inner" data-g-action="Adometry by Google" data-g-event="Home"
+                  data-g-label="For Enterprise" href="../analytics/adometry/">
+                    <img alt="" class=
+                  "product-logo" src="//www.google.com/ads/images/icons/logo-adometry.png">
+                      <h3>
+                        Adometry<br>
+                    by Google
+                  </h3>
+                      <p class="last">
+                        Measure your marketing’s effectiveness with startling precision.
+                      </p>
+                      <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height=
+                  "16px" version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space=
+                  "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                  "http://www.w3.org/1999/xlink" y="0px">
+                  <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+                  </polygon></svg>
+                      <img alt="" class="icon-arrow-related" height="16" src=
+                  "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-offset-1 section-image">
+              <picture>
+                <source media="(min-width: 768px)" srcset=
+              "../analytics/images/funnel/enterprise_1x.png, ../analytics/images/funnel/enterprise_2x.png 2x">
+                  <img alt="" class="device-animation" data-class-name='device-animation'
+                  data-rs-active='enterpriseAnimation' data-rs-trigger-class='device-animation' srcset=
+              "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                  </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-small-business light-gray">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="col-6">
+              <div class="cols-row">
+                <div class="col-12" data-rs-trigger="smallBusinessAnimation">
+                  <h4 class="section-sub-heading border-yellow">
+                    For Small Business
+                  </h4>
+                  <h2>
+                    Free solutions to help you grow.
+                  </h2>
+                  <p class="font-large">
+                    Explore our free solutions to help you see what’s working and fix what’s not.
+                  </p>
+                  <a class="button cta-main" data-g-action="Sign Up for Analytics"
+              data-g-event="Home" data-g-label="For Small Business" href=
+                  "https://www.google.com/analytics/web/?hl=en">Sign Up For Analytics</a>
+                </div>
+              </div>
+              <div class="hidden-s section-image-s">
+                <picture>
+                  <source media="(min-width: 768px)" srcset=
+                "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                    <img alt="" class="" srcset=
+                "../analytics/images/funnel/small-business_m_1x.png, ../analytics/images/funnel/small-business_m_2x.png 2x">
+                    </picture>
+              </div>
+              <div class="cols-row cards">
+                <div class="col-4 col-m-3 card card-related col-6 col-m-6">
+                  <a class="card-inner" data-g-action="Google Analytics" data-g-event="Home"
+                  data-g-label="For Small Business" href="../analytics/standard/">
+                    <img alt=""
+                  class="product-logo" src=
+                  "//www.google.com/images/icons/material/product/1x/analytics_64dp.png">
+                      <h3>
+                        Google Analytics
+                      </h3>
+                      <p class="last">
+                        Get the insights you need to improve your small business. For free.
+                      </p>
+                      <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height=
+                  "16px" version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space=
+                  "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                  "http://www.w3.org/1999/xlink" y="0px">
+                  <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+                  </polygon></svg>
+                      <img alt="" class="icon-arrow-related" height="16" src=
+                  "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                  </a>
+                </div>
+                <div class="col-4 col-m-3 card card-related col-6 col-m-6">
+                  <a class="card-inner" data-g-action="Tag Manager" data-g-event="Home"
+                  data-g-label="For Small Business" href="../analytics/tag-manager/">
+                    <img alt=""
+                  class="product-logo" src=
+                  "//www.google.com/ads/images/icons/icon-product-tagmanager-64.png">
+                      <h3>
+                        Tag<br>
+                    Manager
+                  </h3>
+                      <p class="last">
+                        Update your website tags easily, without having to edit code.
+                      </p>
+                      <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height=
+                  "16px" version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space=
+                  "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                  "http://www.w3.org/1999/xlink" y="0px">
+                  <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+                  </polygon></svg>
+                      <img alt="" class="icon-arrow-related" height="16" src=
+                  "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-offset-1 section-image">
+              <picture>
+                <source media="(min-width: 768px)" srcset=
+              "../analytics/images/funnel/small-business_1x.png, ../analytics/images/funnel/small-business_2x.png 2x">
+                  <img alt="" class="device-animation" data-class-name='device-animation'
+                  data-rs-active='smallBusinessAnimation' data-rs-trigger-class='device-animation'
+                  srcset=
+              "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                  </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-mobile-apps">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="col-6">
+              <div class="cols-row">
+                <div class="col-12">
+                  <h4 class="section-sub-heading border-yellow">
+                    For Mobile Apps
+                  </h4>
+                  <h2>
+                    Build better apps from start to finish.
+                  </h2>
+                  <p class="font-large">
+                    Set yourself up for success by measuring the full value of your app across all
+                    key stages.
+                  </p>
+                  <a class="button cta-main" data-g-action="Get Started" data-g-event="Home"
+              data-g-label="For Mobile Apps" href=
+                  "https://support.google.com/analytics/answer/2587086?hl=en">Get Started</a>
+                </div>
+              </div>
+              <div class="hidden-s section-image-s">
+                <picture>
+                  <source media="(min-width: 768px)" srcset=
+                "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                    <img alt="" class="" srcset=
+                "../analytics/images/funnel/mobile-apps_m_1x.png, ../analytics/images/funnel/mobile-apps_m_2x.png 2x">
+                    </picture>
+              </div>
+              <div class="cols-row cards">
+                <div class="col-4 col-m-3 card card-related col-6 col-m-6 card-light-gray">
+                  <a class="card-inner" data-g-action="Get Started" data-g-event="Home"
+                  data-g-label="For Mobile Apps" href="../analytics/mobile/">
+                    <img alt="" class=
+                  "product-logo" src=
+                  "//www.google.com/images/icons/material/product/1x/analytics_64dp.png">
+                      <h3>
+                        Analytics for Mobile Apps
+                      </h3>
+                      <p class="last">
+                        Measure the end-to-end value of your app.
+                      </p>
+                      <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height=
+                  "16px" version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space=
+                  "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                  "http://www.w3.org/1999/xlink" y="0px">
+                  <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+                  </polygon></svg>
+                      <img alt="" class="icon-arrow-related" height="16" src=
+                  "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-offset-1 section-image">
+              <picture>
+                <source media="(min-width: 768px)" srcset=
+              "../analytics/images/funnel/mobile-apps_1x.png, ../analytics/images/funnel/mobile-apps_2x.png 2x">
+                  <img alt="" class="" srcset=
+              "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCgkKDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAAIDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwH/2Q==">
+                  </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section light-gray featuredcontent-list">
+        <div class="site-width">
+          <h4 class="section-sub-heading border-yellow">
+            Featured Resources
+          </h4>
+          <div class="cols-row">
+            <a class="glue-filter-result col-6 col-m-4 card card-featuredcontent" href=
+            "premium/featured-content/gms-4ways.html">
+              <div class="card-inner">
+                <div class="doctype-container">
+                  <span class="doctype doctype-guide">
+                    <svg enable-background="new 0 0 32 32" height=
+                "24px" version="1.1" viewbox="0 0 32 32" width="24px" x="0px" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y=
+                "0px">
+                <path d=
+                "M16,32C7.2,32,0,24.8,0,16C0,7.2,7.2,0,16,0c8.8,0,16,7.2,16,16C32,24.8,24.8,32,16,32z M16,2.7C8.7,2.7,2.7,8.7,2.7,16 c0,7.3,6,13.3,13.3,13.3c7.3,0,13.3-6,13.3-13.3C29.3,8.7,23.3,2.7,16,2.7z">
+                </path>
+                <path d=
+                "M22,8c0.2-1.5-0.7-2-1.9-1.1l-6.5,4.9c-1.2,0.9-2.3,2.9-2.5,4.4l-0.9,8.1c-0.2,1.5,0.7,2,1.9,1.1l6.5-4.9 c1.2-0.9,2.3-2.9,2.5-4.4L22,8z M15,18.3c-1.1-0.6-1.5-2.1-0.9-3.2c0.6-1.1,2.1-1.5,3.2-0.9c1.1,0.6,1.5,2.1,0.9,3.2 C17.6,18.5,16.1,18.9,15,18.3z">
+                </path></svg>
+                    <img alt="" height="24" src=
+                "//www.google.com/ads/images/icons/icon-doctype-guide.png" width="24">
+                  </span>
+                  <h4 class="doctype-guide-title">
+                    Guide
+                  </h4>
+                </div>
+                <p class="topic">
+                  Measurement Strategy
+                </p>
+                <h3>
+                  Four ways to measure what matters most.
+                </h3>
+                <p>
+                  Adopt these best practices to drive success: choose the right metrics, focus on the
+                  best customers, value the entire path to purchase, and prove impact.
+                </p>
+                <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height="16px"
+            version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space="preserve" xmlns=
+              "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+              <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+              </polygon></svg>
+                <img alt="" class="icon-arrow-related" height="16" src=
+              "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                </div>
+            </a>
+            <a class="glue-filter-result col-6 col-m-4 card card-featuredcontent" href=
+            "premium/featured-content/gat-measurement.html">
+              <div class="card-inner">
+                <div class="doctype-container">
+                  <span class="doctype doctype-article">
+                    <svg enable-background="new 0 0 32 32"
+                height="24px" version="1.1" viewbox="0 0 32 32" width="24px" x="0px" xml:space=
+                "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                "http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M28.5,4.1H13.9H8.8c-1.9,0-3.5,1.6-3.5,3.5v0H3.5c-1.2,0-2.3,0.6-2.9,1.6C0.2,9.7,0,10.4,0,11.1v0v10.7 c0,3.7,1.7,6.2,5.8,6.2h22.7c1.9,0,3.5-1.6,3.5-3.5V7.6C32,5.6,30.4,4.1,28.5,4.1z M3.8,24.1c-0.8,0-1.5-0.7-1.5-1.5V11 c0.1-0.5,0.6-0.9,1.1-0.9h1.9v2.6H3.9v1.6h1.4v2H3.9v1.6h1.4v2H3.9v1.6h1.4v1.1C5.3,23.4,4.6,24.1,3.8,24.1z M29.8,23.3L29.8,23.3 c0,1.4-1.1,2.5-2.5,2.5l0,0H5.9c1.3-0.1,2.4-1.2,2.4-2.5l0-15.6c0-0.6,0.5-1.1,1.1-1.1h19.2c0.6,0,1.1,0.5,1.1,1.1L29.8,23.3z">
+                </path>
+                <rect height="9.6" width="7.3" x="10.6" y="8.8"></rect>
+                <rect height="1.5" width="7.3" x="20.2" y="8.7"></rect>
+                <rect height="1.5" width="7.3" x="20.2" y="12.8"></rect>
+                <rect height="1.5" width="7.3" x="20.2" y="17"></rect>
+                <rect height="1.5" width="17" x="10.5" y="21.1"></rect></svg>
+                    <img alt="" height=
+                "24" src="//www.google.com/ads/images/icons/icon-doctype-article.png" width=
+                "24">
+                  </span>
+                  <h4 class="doctype-article-title">
+                    Article
+                  </h4>
+                </div>
+                <p class="topic">
+                  Marketing Analytics and Attribution
+                </p>
+                <h3>
+                  Better measurement with analytics and attribution.
+                </h3>
+                <p>
+                  Analytics help you understand the customer experience. Attribution informs your
+                  marketing mix. Today’s top marketers need both.
+                </p>
+                <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height="16px"
+            version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space="preserve" xmlns=
+              "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+              <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+              </polygon></svg>
+                <img alt="" class="icon-arrow-related" height="16" src=
+              "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                </div>
+            </a>
+            <a class="glue-filter-result col-6 col-m-4 card card-featuredcontent" href=
+            "premium/featured-content/gat-guide.html">
+              <div class="card-inner">
+                <div class="doctype-container">
+                  <span class="doctype doctype-guide">
+                    <svg enable-background="new 0 0 32 32" height=
+                "24px" version="1.1" viewbox="0 0 32 32" width="24px" x="0px" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y=
+                "0px">
+                <path d=
+                "M16,32C7.2,32,0,24.8,0,16C0,7.2,7.2,0,16,0c8.8,0,16,7.2,16,16C32,24.8,24.8,32,16,32z M16,2.7C8.7,2.7,2.7,8.7,2.7,16 c0,7.3,6,13.3,13.3,13.3c7.3,0,13.3-6,13.3-13.3C29.3,8.7,23.3,2.7,16,2.7z">
+                </path>
+                <path d=
+                "M22,8c0.2-1.5-0.7-2-1.9-1.1l-6.5,4.9c-1.2,0.9-2.3,2.9-2.5,4.4l-0.9,8.1c-0.2,1.5,0.7,2,1.9,1.1l6.5-4.9 c1.2-0.9,2.3-2.9,2.5-4.4L22,8z M15,18.3c-1.1-0.6-1.5-2.1-0.9-3.2c0.6-1.1,2.1-1.5,3.2-0.9c1.1,0.6,1.5,2.1,0.9,3.2 C17.6,18.5,16.1,18.9,15,18.3z">
+                </path></svg>
+                    <img alt="" height="24" src=
+                "//www.google.com/ads/images/icons/icon-doctype-guide.png" width="24">
+                  </span>
+                  <h4 class="doctype-guide-title">
+                    Guide
+                  </h4>
+                </div>
+                <p class="topic">
+                  Marketing Analytics and Attribution
+                </p>
+                <h3>
+                  The definitive guide to data-driven attribution.
+                </h3>
+                <p>
+                  Learn everything you need to know about data-driven attribution and what steps you
+                  can take right now to improve performance.
+                </p>
+                <svg class="icon-arrow-related" enable-background="new 0 0 32 32" height="16px"
+            version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space="preserve" xmlns=
+              "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+              <polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
+              </polygon></svg>
+                <img alt="" class="icon-arrow-related" height="16" src=
+              "//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
+                </div>
+            </a>
+          </div>
+          <div class="cols-row cta">
+            <a class="link-more" data-g-action="See all featured resources" data-g-event="Home"
+            data-g-label="Featured Resources" href="./premium/featured-content/">
+              See All Featured
+              Resources <svg class="icon-arrow-more" enable-background="new 0 0 32 32" height="14px"
+    version="1.1" viewbox="0 0 32 32" width="14px" x="0px" xml:space="preserve" xmlns=
+            "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+            <path d=
+            "M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16c8.8,0,16-7.2,16-16S24.8,0,16,0 M16,25.7L14.3,24l6.8-6.8H7v-2.4h14.1L14.3,8L16,6.3 l9.7,9.7L16,25.7z">
+            </path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section section-g-plus">
+        <div class="site-width">
+          <script id="gplus.html" type="text/ng-template">
+            <div class="gplus-activity gplus-simple gplus-simple-multiple">
+              <div class="cols-row">
+                <div class="col-1">
+
+
+
+
+
+                  <img class="icon-product" src="//www.google.com/images/branding/product/1x/google_plus_64dp.png" alt="">
+    
+
+          </div>
+                <div class="col-11">
+                  <h3>What’s new?</h3>
+                  <div class="post-all" ng-if="!gPlusCtrl.data.items">
+                    <a href="https://plus.google.com/+GoogleAnalytics/posts" target="_blank">Visit us on Google+</a>
+                  </div>
+                  <div class="post-title" ng-repeat="item in gPlusCtrl.data.items">
+                    <p class="font-medium">
+                      <strong>{[item.published | date:'MMM d']}:</strong>
+                      {[item.title]}
+                      <a href="{[item.url]}" target="_blank">Read more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+          <div data-g-plus="GoogleAnalytics" data-opt-quantity="3"></div>
+        </div>
+      </section>
+      <section class="section section-become-a-pro light-gray">
+        <div class="site-width">
+          <div class="cols-row">
+            <div class="col-6 section-intro-content">
+              <h4 class="section-sub-heading border-blue">
+                Become an Analytics Pro
+              </h4>
+              <h2>
+                Analytics Academy
+              </h2>
+              <p class="font-large">
+                Want to increase your Google Analytics aptitude for free? Head over to Analytics
+                Academy, where you can view lessons from experts, test your knowledge, and more.
+              </p>
+              <p class="font-large">
+                <a class="link-more" data-g-action="AA: Register For Free" data-g-event="Home"
+                data-g-label="Become An Analytics Pro" href=
+                "https://analyticsacademy.withgoogle.com" target="moreinfo">
+                  Register for free
+                  <svg class="icon-arrow-more" enable-background="new 0 0 32 32" height="14px"
+                  version="1.1" viewbox="0 0 32 32" width="14px" x="0px" xml:space="preserve" xmlns=
+                "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16c8.8,0,16-7.2,16-16S24.8,0,16,0 M16,25.7L14.3,24l6.8-6.8H7v-2.4h14.1L14.3,8L16,6.3 l9.7,9.7L16,25.7z">
+                </path></svg>
+                </a>
+              </p>
+            </div>
+            <div class="col-5 col-offset-1 section-image">
+              <a class="link-more" data-g-action="AA: Register For Free" data-g-event="Home"
+              data-g-label="Become An Analytics Pro" href="https://analyticsacademy.withgoogle.com"
+              target="moreinfo">
+                <img alt="Analytics Academy" class="img-incol" srcset=
+              "../analytics/images/shared/analytics-academy_1x.jpg, ../analytics/images/shared/analytics-academy_2x.jpg 2x">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer" id="footer" role="contentinfo">
+      <div class="site-width">
+        <div class="footer-upper cols-row">
+          <div class="footer-social col-6">
+            <dl>
+              <dt>
+                Follow us on:
+              </dt>
+              <dd>
+                <a data-g-action="Follow Us" data-g-event="Home" data-g-label="GPlus" href=
+                "https://plus.google.com/+GoogleAnalytics/">
+                  <svg class="icon-footer-gplus c1"
+                height="20px" version="1.1" viewbox="0 0 23 15" width="30px" x="0px" xml:space=
+                "preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                "http://www.w3.org/1999/xlink" y="0px">
+                <polygon points="23,6 21,6 21,4 19,4 19,6 17,6 17,8 19,8 19,10 21,10 21,8 23,8">
+                </polygon>
+                <path d=
+                "M11.8,8.9c-0.1,1.3-1.3,3.4-4.3,3.4c-2.6,0-4.6-2.1-4.6-4.7S5,2.9,7.5,2.9c1.5,0,2.4,0.6,3,1.1 l0,0l2-2c-1.3-1.2-3-2-5-2C3.4,0.1,0,3.5,0,7.6s3.4,7.5,7.5,7.5c4.3,0,7.2-3,7.2-7.3c0-0.6-0.1-1.1-0.2-1.5h-7V9L11.8,8.9L11.8,8.9 z">
+                </path></svg>
+                  <img alt="Google+" class="icon-footer-gplus" height="20" src=
+                "//www.google.com/ads/images/icons/icon-footer-gplus.png" width="20">
+                </a>
+              </dd>
+              <dd>
+                <a data-g-action="Follow Us" data-g-event="Home" data-g-label="Blogger" href=
+                "http://analytics.blogspot.com/">
+                  <svg class="icon-footer-blogger"
+                enable-background="new 0 0 32 32" height="20px" version="1.1" viewbox="0 0 32 32"
+                width="20px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M28.8,0H3.2C1.4,0,0,1.4,0,3.2l0,25.6C0,30.6,1.4,32,3.2,32h25.6c1.8,0,3.2-1.4,3.2-3.2V3.2 C32,1.4,30.6,0,28.8,0 M22.4,11.2v1.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6,0.7,1.6,1.6v4.8c0,2.7-2.1,4.8-4.8,4.8h-9.6 c-2.7,0-4.8-2.1-4.8-4.8V9.6c0-2.6,2.1-4.8,4.8-4.8h6.4c2.7,0,4.8,2.2,4.8,4.8V11.2z M12.7,12.8h4.2c0.9,0,1.6-0.7,1.6-1.6 s-0.7-1.6-1.6-1.6h-4.2c-0.9,0-1.6,0.7-1.6,1.6S11.8,12.8,12.7,12.8 M19.2,17.6h-6.5c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6 h6.5c0.9,0,1.6-0.7,1.6-1.6C20.8,18.3,20.1,17.6,19.2,17.6">
+                </path></svg>
+                  <img alt="Blogger" class="icon-footer-blogger" height="20" src=
+                "//www.google.com/ads/images/icons/icon-footer-blogger.png" width="20">
+                </a>
+              </dd>
+              <dd>
+                <a data-g-action="Follow Us" data-g-event="Home" data-g-label="Twitter" href=
+                "https://twitter.com/googleanalytics">
+                  <svg class="icon-footer-twitter"
+                enable-background="new 0 0 32 32" height="20px" version="1.1" viewbox="0 0 32 32"
+                width="20px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M28.8,0H3.2C1.4,0,0,1.4,0,3.2l0,25.6C0,30.6,1.4,32,3.2,32h25.6c1.8,0,3.2-1.4,3.2-3.2V3.2 C32,1.4,30.6,0,28.8,0z M25.1,11.7c-0.1,7.4-4.8,12.5-11.9,12.8c-2.9,0.1-5-0.8-6.9-2c2.2,0.3,4.8-0.5,6.2-1.7 c-2.1-0.2-3.4-1.3-3.9-3c0.6,0.1,1.2,0.1,1.8,0c-1.9-0.6-3.3-1.8-3.3-4.3C7.7,13.7,8.3,13.9,9,14c-1.4-0.8-2.5-3.8-1.3-5.7 c2.1,2.3,4.7,4.2,8.8,4.5c-1-4.5,4.9-6.9,7.4-3.9c1.1-0.2,1.9-0.6,2.7-1c-0.3,1-1,1.8-1.8,2.4c0.9-0.1,1.6-0.3,2.3-0.7 C26.8,10.3,25.9,11.1,25.1,11.7z">
+                </path></svg>
+                  <img alt="Twitter" class="icon-footer-twitter" height="20" src=
+                "//www.google.com/ads/images/icons/icon-footer-twitter.png" width="20">
+                </a>
+              </dd>
+              <dd>
+                <a data-g-action="Follow Us" data-g-event="Home" data-g-label="Youtube" href=
+                "https://www.youtube.com/user/googleanalytics">
+                  <svg class="icon-footer-youtube"
+                enable-background="new 0 0 32 32" height="20px" version="1.1" viewbox="0 0 32 32"
+                width="20px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path d=
+                "M28.8,3.8c-1-0.3-6.9-0.6-12.8-0.6c-5.9,0-11.8,0.3-12.8,0.6C0.7,4.6,0,10.2,0,16s0.7,11.4,3.2,12.2c1,0.3,6.9,0.6,12.8,0.6 c5.9,0,11.8-0.3,12.8-0.6C31.3,27.4,32,21.8,32,16S31.3,4.7,28.8,3.8 M12.8,22.4V9.6l8.8,6.4L12.8,22.4z">
+                </path></svg>
+                  <img alt="Youtube" class="icon-footer-youtube" height="20" src=
+                "//www.google.com/ads/images/icons/icon-footer-youtube.png" width="20">
+                </a>
+              </dd>
+            </dl>
+          </div>
+          <div class="footer-meta-links col-6">
+            <ul>
+              <li>
+                <a href="https://www.google.com/appsstatus#hl=en">Apps Status Dashboard</a>
+              </li>
+              <li>
+                <a href="../analytics/terms/us.html">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="footer-nav cols-row">
+          <dl class="col-3">
+            <dt>
+              Learning &amp; Support
+            </dt>
+            <dd>
+              <a href="https://support.google.com/analytics/?hl=en#topic=3544906">Help Center</a>
+            </dd>
+            <dd>
+              <a href="https://productforums.google.com/forum/#!forum/analytics">User Forum</a>
+            </dd>
+            <dd>
+              <a href="https://www.google.com/analytics/gallery/">Solutions Gallery</a>
+            </dd>
+            <dd>
+              <a href="https://analyticsacademy.withgoogle.com/explorer">Analytics Academy</a>
+            </dd>
+            <dd>
+              <a href="https://www.google.com/analytics/partners/search/apps">Partner Gallery</a>
+            </dd>
+          </dl>
+          <dl class="col-3">
+            <dt>
+              Developers
+            </dt>
+            <dd>
+              <a href="https://developers.google.com/analytics/?hl=en">
+                Google Analytics Developer
+                Site
+              </a>
+            </dd>
+            <dd>
+              <a href="https://ga-dev-tools.appspot.com/">Demos &amp; Tools</a>
+            </dd>
+            <dd>
+              <a href="https://developers.google.com/analytics/help/?hl=en">
+                Help &amp;
+                Communities
+              </a>
+            </dd>
+            <dd>
+              <a href="https://developers.google.com/analytics/program/?hl=en">Partner Program</a>
+            </dd>
+          </dl>
+          <dl class="col-3">
+            <dt>
+              Related Products
+            </dt>
+            <dd>
+              <a href="https://www.google.com/adwords/">AdWords</a>
+            </dd>
+            <dd>
+              <a href="https://www.google.com/doubleclick/">DoubleClick</a>
+            </dd>
+            <dd>
+              <a href="https://www.google.com/adsense/start/">AdSense</a>
+            </dd>
+          </dl>
+          <dl class="col-3">
+            <dt>
+              More Solutions from Google
+            </dt>
+            <dd>
+              <a href="https://www.google.com/services/">Google Business Solutions</a>
+            </dd>
+            <dd>
+              <a href="https://www.google.com/intx/en/work/apps/business/">Google Apps for Work</a>
+            </dd>
+          </dl>
+        </nav>
+        <div class="footer-lower cols-row">
+          <div class="footer-meta-links col-6">
+            <ul>
+              <li>
+                <a href="https://support.google.com/analytics/?hl=en#topic=3544906">
+                  <svg class=
+                "icon-footer-help" enable-background="new 0 0 32 32" height="20px" version="1.1"
+                viewbox="0 0 32 32" width="20px" x="0px" xml:space="preserve" xmlns=
+                "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <path clip-rule="evenodd" d=
+                "M16,0C7.2,0,0,7.2,0,16c0,3,0.9,5.9,2.3,8.3L0,32l7.7-2.3 C10.2,31.1,13,32,16,32c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M17.3,24.6c-0.3,0.3-0.7,0.5-1.2,0.5s-1-0.2-1.2-0.5 c-0.3-0.3-0.4-0.7-0.4-1.1c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.7-0.1 c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5c0.1,0.2,0.1,0.4,0.1,0.6C17.7,24,17.6,24.3,17.3,24.6z M21.1,13.2c-0.2,0.5-0.4,0.9-0.6,1.3c-0.3,0.4-0.6,0.8-0.9,1.2c-0.3,0.4-0.7,0.8-1,1.1c-0.4,0.4-0.7,0.9-0.9,1.4 c-0.2,0.5-0.2,0.8-0.3,1.8h-2.8c0-1,0-1.2,0.1-1.6c0.1-0.4,0.2-1,0.3-1.3c0.2-0.3,0.4-0.7,0.6-1c0.2-0.3,0.6-0.7,0.9-1 c0.2-0.3,0.5-0.5,0.7-0.7c0.2-0.2,0.4-0.5,0.6-0.7c0.2-0.3,0.3-0.5,0.4-0.8c0.1-0.3,0.1-0.6,0.1-1c0-0.8-0.2-1.4-0.6-1.8 c-0.4-0.4-1-0.6-1.7-0.6c-0.3,0-0.6,0.1-0.9,0.1c-0.3,0.1-0.5,0.2-0.8,0.4s-0.4,0.6-0.5,0.8c-0.1,0.3-0.2,1.2-0.2,1.2h-3 c0-2,0.2-1.6,0.4-2.2c0.3-0.6,0.7-1.2,1.1-1.6c0.5-0.4,1-0.7,1.7-0.9C14.6,7,15.3,6.9,16,6.9c0.8,0,1.6,0.1,2.2,0.3 c0.7,0.2,1.2,0.5,1.7,0.9c0.5,0.4,0.8,0.9,1,1.5c0.2,0.6,0.4,1.3,0.4,2.1C21.3,12.3,21.2,12.8,21.1,13.2z"
+                    fill-rule="evenodd"></path></svg>
+                  <img alt="Help" class="icon-footer-help" height=
+                "20" src="//www.google.com/ads/images/icons/icon-footer-help.png" width="20">
+                    Help
+                </a>
+              </li>
+              <li>
+                <a href="//www.google.com">Google</a>
+              </li>
+              <li>
+                <a href="//www.google.com/intl/en/policies/privacy/">Privacy</a>
+              </li>
+              <li>
+                <a href="//www.google.com/intl/en/policies/terms/">Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-locale-switcher col-6">
+            <label class="visually-hidden" for="footer-locales">
+              <span>
+                Change language or
+                region:
+              </span>
+            </label>
+            <select class="footer-locales" id="footer-locales" onchange=
+            "var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};">
+              <option value="//www.google.com/intl/id/analytics/">
+                Bahasa Indonesia
+              </option>
+              <option value="//www.google.com/intl/ca/analytics/">
+                Català
+              </option>
+              <option value="//www.google.com/intl/cs/analytics/">
+                Čeština
+              </option>
+              <option value="//www.google.com/intl/da/analytics/">
+                Dansk
+              </option>
+              <option value="//www.google.com/intl/de/analytics/">
+                Deutsch
+              </option>
+              <option value="//www.google.com/intl/en/analytics/">
+                English
+              </option>
+              <option selected="" value="//www.google.com/intl/en/analytics/">
+                English
+              </option>
+              <option value="//www.google.co.uk/intl/en/analytics/">
+                English – United Kingdom
+              </option>
+              <option value="//www.google.com/intl/es/analytics/">
+                Español
+              </option>
+              <option value="//www.google.com/intl/tl/analytics/">
+                Filipino
+              </option>
+              <option value="//www.google.com/intl/fr/analytics/">
+                Français
+              </option>
+              <option value="//www.google.com/intl/it/analytics/">
+                Italiano
+              </option>
+              <option value="//www.google.com/intl/lt/analytics/">
+                Lietuvių
+              </option>
+              <option value="//www.google.com/intl/hu/analytics/">
+                Magyar
+              </option>
+              <option value="//www.google.com/intl/nl/analytics/">
+                Nederlands
+              </option>
+              <option value="//www.google.com/intl/no/analytics/">
+                Norsk
+              </option>
+              <option value="//www.google.com/intl/pl/analytics/">
+                Polski
+              </option>
+              <option value="//www.google.com/intl/pt-BR/analytics/">
+                Português (Brasil)
+              </option>
+              <option value="//www.google.com/intl/pt-PT/analytics/">
+                Português (Portugal)
+              </option>
+              <option value="//www.google.com/intl/sk/analytics/">
+                Slovenčina
+              </option>
+              <option value="//www.google.com/intl/fi/analytics/">
+                Suomi
+              </option>
+              <option value="//www.google.com/intl/sv/analytics/">
+                Svenska
+              </option>
+              <option value="//www.google.com/intl/vi/analytics/">
+                Tiếng Việt
+              </option>
+              <option value="//www.google.com/intl/tr/analytics/">
+                Türkçe
+              </option>
+              <option value="//www.google.com/intl/el/analytics/">
+                Ελληνικά
+              </option>
+              <option value="//www.google.com/intl/bg/analytics/">
+                Български
+              </option>
+              <option value="//www.google.com/intl/ru/analytics/">
+                Русский
+              </option>
+              <option value="//www.google.com/intl/th/analytics/">
+                ไทย
+              </option>
+              <option value="//www.google.com/intl/ko/analytics/">
+                한국어
+              </option>
+              <option value="//www.google.com/intl/zh-CN/analytics/">
+                中文（简体中文）
+              </option>
+              <option value="//www.google.com/intl/zh-TW/analytics/">
+                中文（繁體中文）
+              </option>
+              <option value="//www.google.com/intl/ja/analytics/">
+                日本語
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js">
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js">
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js">
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-messages.min.js">
+    </script>
+    <script src="/analytics/js/analytics.min.js">
+    </script>
+    <script>
+      dataLayer = [{
+      'country': 'us',
+      'region': 'noram',
+      'language': 'en',
+      'pageCategory': 'Google Analytics Home',
+      'pageSubCategory': 'Home',
+      'eID': 'index.html',
+      'visitorType': 'recognized'
+      }];
+    </script>
+    <noscript>
+      <iframe class="c2" height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-KLXF7H" width="0"></iframe>
+    </noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KLXF7H');
+    </script>
+  </body>
+</html>
