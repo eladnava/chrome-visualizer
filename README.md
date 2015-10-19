@@ -21,16 +21,16 @@ A custom Visual Studio debug visualizer that displays HTML strings in Chrome.
 
 * Clone the repository and head over to the **Installation/** directory, where you'll find a `README.txt` with detailed instructions.
 
-# Debugging
-
-* Currently, simply building the solution will copy the necessary files to **Visual Studio 2012**'s installation directory:
-(C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers)
-* Once you restart a debugging session, Visual Studio will reload any debugger visualizer DLLs within that directory
-
 # Roadmap
 
 * **XPath Tester** - an input text field that can help debug XPaths by highlighting matched elements
 * Got any ideas? Create an issue and let us know!
+
+# Architecture
+
+* **ChromeVisualizer** - a WPF application that contains a Window with a `CefSharp.Wpf.ChromiumWebBrowser`
+* **ChromeVisualizerIntegration** - a library project that adds the Chrome Visualizer option for strings in Visual Studio's debugging context menu
+* **ChromeVisualizerDemo** - a console application that simulates clicking the Chrome Visualizer in the debugger context menu
 
 # Collaborating
 
