@@ -20,7 +20,7 @@ namespace ChromeVisualizerVSIntegration
         private static readonly string chromeVisualizerPath = @"C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers\ChromeVisualizer\ChromeVisualizer.exe";
 
         /// <summary>
-        /// Contains the code that actually creates the ChromeVisualizer (by starting its process).
+        /// Contains the code that actually creates the ChromeVisualizer (by starting its process)
         /// </summary>
         /// <param name="windowService"></param>
         /// <param name="objectProvider"></param>
