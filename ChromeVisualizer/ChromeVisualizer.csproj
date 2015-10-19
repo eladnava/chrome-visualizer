@@ -129,7 +129,7 @@
   <Import Project="..\packages\cef.redist.x64.3.2357.1287\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2357.1287\build\cef.redist.x64.targets')" />
   <Import Project="..\packages\CefSharp.Common.43.0.0\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.43.0.0\build\CefSharp.Common.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /I /Y /E "$(ProjectDir)bin\Debug" "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers\$(ProjectName)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /I /Y /E "$(ProjectDir)bin\Debug" "C:\Program Files\$(ProjectName)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
